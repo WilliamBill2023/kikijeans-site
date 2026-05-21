@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /mirror-home.html
+
+Sitemap: https://williambill2023.github.io/kikijeans-site/sitemap.xml
