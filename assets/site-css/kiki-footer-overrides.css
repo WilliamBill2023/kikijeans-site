@@ -130,6 +130,39 @@
   width: 42px !important;
   max-width: 42px !important;
   height: auto !important;
+  filter: brightness(0) invert(1) !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-56c91f5:not(.elementor-motion-effects-element-type-background),
+.elementor-49 .elementor-element.elementor-element-56c91f5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("./assets/wp-content-uploads-2025-05-1-5978c45a39.png") !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-9154268:not(.elementor-motion-effects-element-type-background),
+.elementor-49 .elementor-element.elementor-element-9154268 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("./assets/wp-content-uploads-2025-05-service-img02-89deef4792.png") !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-30f8b8e:not(.elementor-motion-effects-element-type-background),
+.elementor-49 .elementor-element.elementor-element-30f8b8e > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("./assets/wp-content-uploads-2025-05-service-img03-99dff13549.png") !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-4cb0bb1:not(.elementor-motion-effects-element-type-background),
+.elementor-49 .elementor-element.elementor-element-4cb0bb1 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("./assets/wp-content-uploads-2025-05-service-img04-1d9e8d60b1.png") !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
 .elementor-121 .elementor-element-08163c2,
