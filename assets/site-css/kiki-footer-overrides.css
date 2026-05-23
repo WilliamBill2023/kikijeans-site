@@ -214,6 +214,12 @@
   background: #000 !important;
 }
 
+.elementor-element-c084481,
+.elementor-element-cf9325d,
+#sh_lsft_custom_dropdown_flags_names {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
   .elementor-121 .elementor-element-0fed971,
   .elementor-121 .elementor-element.elementor-element-0fed971,
@@ -230,5 +236,16 @@
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 22px !important;
+  }
+
+  .elementor-element.elementor-element-204c4f6,
+  .elementor-element.elementor-element-e53e55d,
+  div.elementor-element-204c4f6,
+  div.elementor-element-e53e55d,
+  .elementor-element-0fed971 .elementor-column.elementor-element.elementor-element-204c4f6,
+  .elementor-element-0fed971 .elementor-column.elementor-element.elementor-element-e53e55d,
+  .elementor-121 .elementor-element-204c4f6,
+  .elementor-121 .elementor-element-e53e55d {
+    display: none !important;
   }
 }
