@@ -3119,7 +3119,7 @@ a[href="/blog/"],
   });
   document.querySelectorAll('.elementor-button, a').forEach((link) => {
     const label = (link.textContent || '').trim().replace(/\s+/g, ' ').toUpperCase();
-    if (label !== 'GET STARTED') return;
+    if (label !== 'GET STARTED' && label !== 'CONTACT US') return;
     link.setAttribute('href', '/assets/site-media/wechat.jpg');
     link.addEventListener('click', (event) => {
       event.preventDefault();
@@ -3130,11 +3130,12 @@ a[href="/blog/"],
     const path = event.composedPath?.() || [];
     const target = path.find((item) => {
       const text = item?.textContent || '';
-      return item?.matches?.('a, button, .elementor-button, .elementor-button-wrapper') && text.trim().replace(/\s+/g, ' ').toUpperCase() === 'GET STARTED';
+      const label = text.trim().replace(/\s+/g, ' ').toUpperCase();
+      return item?.matches?.('a, button, .elementor-button, .elementor-button-wrapper') && (label === 'GET STARTED' || label === 'CONTACT US');
     }) || event.target?.closest?.('a, button, .elementor-button, .elementor-button-wrapper');
     if (!target) return;
     const label = (target.textContent || '').trim().replace(/\s+/g, ' ').toUpperCase();
-    if (label !== 'GET STARTED') return;
+    if (label !== 'GET STARTED' && label !== 'CONTACT US') return;
     event.preventDefault();
     event.stopPropagation();
     openImageLightbox('/assets/site-media/wechat.jpg', 'WeChat QR code');
