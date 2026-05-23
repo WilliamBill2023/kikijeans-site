@@ -215,7 +215,13 @@
 }
 
 @media (max-width: 767px) {
-  .elementor-121 .elementor-element-0fed971 {
+  .elementor-121 .elementor-element-0fed971,
+  .elementor-121 .elementor-element.elementor-element-0fed971,
+  .elementor-121 .elementor-element.elementor-element-0fed971.elementor-hidden-mobile,
+  .elementor-121 .elementor-element.elementor-element-0fed971.elementor-hidden-tablet {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     padding: 38px 20px 34px !important;
   }
 

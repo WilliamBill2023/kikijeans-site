@@ -2980,6 +2980,17 @@ jeanvendors and distributors.</h2>				</div>
   .elementor-121 .elementor-element.elementor-element-6b7426a5,
   .elementor-121 .elementor-element.elementor-element-749fd1c8,
   .elementor-121 .elementor-element.elementor-element-c55b327{display:none!important}
+  .elementor-element-4af4d50{display:none!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971,
+  .elementor-121 .elementor-element.elementor-element-0fed971.elementor-hidden-mobile,
+  .elementor-121 .elementor-element.elementor-element-0fed971.elementor-hidden-tablet{display:block!important;visibility:visible!important;opacity:1!important;margin:0!important;padding:38px 20px 34px!important;background-color:#102940!important;background-image:linear-gradient(rgba(8,18,27,.78),rgba(8,18,27,.78)),url('/assets/site-css/assets/wp-content-uploads-2023-07-denim-jeans-manufacturer-236477425e.jpg')!important;background-position:center!important;background-repeat:no-repeat!important;background-size:cover!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971>.elementor-container{display:grid!important;grid-template-columns:1fr!important;gap:22px!important;max-width:1140px!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971 .elementor-column{display:flex!important;width:100%!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971 .elementor-widget-wrap{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:8px!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971 .elementor-heading-title,
+  .elementor-121 .elementor-element.elementor-element-0fed971 .elementor-heading-title a{color:#fff!important}
+  .elementor-121 .elementor-element.elementor-element-0fed971 img{display:block!important;visibility:visible!important;opacity:1!important}
+  .elementor-121 .elementor-element-1025476 img{filter:brightness(0) invert(1)!important}
   .elementor-121 .elementor-element.elementor-element-1b81bf5.elementor-hidden-desktop{display:block!important;position:fixed!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;z-index:99999!important;background:#0079ac!important}
   .elementor-121 .elementor-element.elementor-element-1b81bf5.elementor-hidden-desktop>.elementor-container{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;width:100%!important;max-width:none!important;margin:0!important;gap:0!important}
   .elementor-element-1b81bf5 .elementor-column{display:flex!important;width:100%!important;min-height:58px!important}
@@ -3080,7 +3091,10 @@ jeanvendors and distributors.</h2>				</div>
       openImageLightbox(src, image?.getAttribute('aria-label'));
     });
   });
-  document.querySelectorAll('.elementor-element-c55b327 a[href*="popup"], .elementor-element-c55b327 a[href="#"]').forEach((link) => {
+  document.querySelectorAll('.elementor-element-c55b327 a[href*="popup"], .elementor-element-c55b327 a[href="#"], .elementor-element-1b81bf5 a').forEach((link) => {
+    const label = (link.textContent || link.getAttribute('aria-label') || '').trim().toLowerCase();
+    const href = link.getAttribute('href') || '';
+    if (!label.includes('wechat') && !href.includes('1863') && !href.includes('wechat') && !href.includes('popup')) return;
     link.setAttribute('href', '/assets/site-media/wechat.jpg');
     link.addEventListener('click', (event) => {
       event.preventDefault();
