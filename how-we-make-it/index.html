@@ -1656,12 +1656,6 @@ jeanvendors and distributors.</h2>				</div>
 
 
 
-
-
-
-
-
-
 <style id="kiki-mobile-contact-product-fixes">
 @media (max-width:767px){
   body{padding-bottom:58px!important}
@@ -1745,10 +1739,10 @@ jeanvendors and distributors.</h2>				</div>
     box.classList.add('is-open');
     document.body.classList.add('kiki-lightbox-open');
   };
-  document.querySelectorAll('.elementor-element-c55b327 a, .elementor-element-1b81bf5 a').forEach((link) => {
+  document.querySelectorAll('.elementor-element-c55b327 a, .elementor-element-1b81bf5 a, a.elementor-button').forEach((link) => {
     const label = (link.textContent || link.getAttribute('aria-label') || '').trim().toLowerCase();
     const href = link.getAttribute('href') || '';
-    if (label.includes('wechat') || label.includes('contact us') || href.includes('1863') || href.includes('wechat')) {
+    if (link.matches('a.elementor-button') || label.includes('wechat') || label.includes('contact us') || href.includes('1863') || href.includes('wechat')) {
       link.setAttribute('href', '/assets/site-media/wechat.jpg');
       link.addEventListener('click', openWechat);
     }
