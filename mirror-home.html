@@ -1260,7 +1260,57 @@ KiKi Jeans</a></h2>				</div>
 		</div>
 					</div>
 		</section>
-		<div class="elementor-element elementor-element-bf82efe elementor-hidden-desktop e-flex e-con-boxed e-con e-parent" data-id="bf82efe" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		
+<style id="kiki-video-shorts-styles">
+.kiki-video-shorts{background:#f5f8fb;padding:46px 0 52px;overflow:hidden}
+.kiki-video-shorts__inner{width:min(1140px,calc(100% - 40px));margin:0 auto}
+.kiki-video-shorts__heading{margin:0 0 26px;text-align:center;color:#000;font:700 30px/1.2 Roboto,Arial,sans-serif;text-transform:uppercase}
+.kiki-video-shorts__heading:after{content:"";display:block;width:44px;height:3px;margin:20px auto 0;background:#2765b3}
+.kiki-video-shorts__shell{position:relative}
+.kiki-video-shorts__track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 40px)/3);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.kiki-video-shorts__track::-webkit-scrollbar{display:none}
+.kiki-video-shorts__track.is-dragging{cursor:grabbing;scroll-behavior:auto}
+.kiki-video-card{position:relative;aspect-ratio:9/16;background:#202020;overflow:hidden;scroll-snap-align:start}
+.kiki-video-card iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.kiki-video-shorts__arrow{position:absolute;top:50%;z-index:2;display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:0;border-radius:999px;background:#2765b3;color:#fff;font:700 26px/1 Arial,sans-serif;cursor:pointer;transform:translateY(-50%)}
+.kiki-video-shorts__arrow--prev{left:-18px}
+.kiki-video-shorts__arrow--next{right:-18px}
+@media (max-width:1024px){.kiki-video-shorts__track{grid-auto-columns:calc((100% - 18px)/2);gap:18px}}
+@media (max-width:767px){.kiki-video-shorts{padding:34px 0 42px}.kiki-video-shorts__inner{width:min(100% - 26px,520px)}.kiki-video-shorts__heading{font-size:24px}.kiki-video-shorts__track{grid-auto-columns:100%}.kiki-video-card{min-height:560px}.kiki-video-shorts__arrow{width:38px;height:38px}.kiki-video-shorts__arrow--prev{left:8px}.kiki-video-shorts__arrow--next{right:8px}}
+</style>
+<section class="kiki-video-shorts" aria-labelledby="kiki-video-shorts-title">
+  <div class="kiki-video-shorts__inner">
+    <h2 class="kiki-video-shorts__heading" id="kiki-video-shorts-title">Factory Video Shorts</h2>
+    <div class="kiki-video-shorts__shell">
+      <button class="kiki-video-shorts__arrow kiki-video-shorts__arrow--prev" type="button" aria-label="Previous video">&lt;</button>
+      <div class="kiki-video-shorts__track">
+        <div class="kiki-video-card"><iframe src="https://www.youtube.com/embed/Sc1vU_jrlXk" title="kikijeans YouTube Short 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+        <div class="kiki-video-card"><iframe src="https://www.youtube.com/embed/sSz2HskytTA" title="kikijeans YouTube Short 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+        <div class="kiki-video-card"><iframe src="https://www.youtube.com/embed/zN8zzbTYGKw" title="kikijeans YouTube Short 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+      <button class="kiki-video-shorts__arrow kiki-video-shorts__arrow--next" type="button" aria-label="Next video">&gt;</button>
+    </div>
+  </div>
+</section>
+<script id="kiki-video-shorts-script">
+(() => {
+  const section = document.querySelector('.kiki-video-shorts');
+  if (!section) return;
+  const track = section.querySelector('.kiki-video-shorts__track');
+  const prev = section.querySelector('.kiki-video-shorts__arrow--prev');
+  const next = section.querySelector('.kiki-video-shorts__arrow--next');
+  if (!track || !prev || !next) return;
+  const stepSize = () => {
+    const first = track.querySelector('.kiki-video-card');
+    if (!first) return track.clientWidth;
+    const gap = parseFloat(getComputedStyle(track).columnGap || '0');
+    return first.getBoundingClientRect().width + gap;
+  };
+  prev.addEventListener('click', () => track.scrollBy({ left: -stepSize(), behavior: 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left: stepSize(), behavior: 'smooth' }));
+})();
+</script>
+<div class="elementor-element elementor-element-bf82efe elementor-hidden-desktop e-flex e-con-boxed e-con e-parent" data-id="bf82efe" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div  class="e-con-inner">
 		<div class="elementor-element elementor-element-eb6e1b2 e-con-full e-flex e-con e-child" data-id="eb6e1b2" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-b97fa5b elementor-widget elementor-widget-heading" data-id="b97fa5b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
